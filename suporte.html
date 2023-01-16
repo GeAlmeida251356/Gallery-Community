@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Gallery Community</title>
+	<link rel="stylesheet" type="text/css" href="suporte.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" type="imagex/png" href="Imagens/index/logo.ico">
+</head>
+<body>
+	<div class="titulo">
+		<a href="index.html"><img src="Imagens/index/seta_voltar.png"></a>
+		<h1>Suporte</h1>
+	</div>
+	<section class="cards">
+		<h3>Perguntas freguentes:</h3>
+		<button class="accordion">Todos podem participar?</button>
+		<div class="resposta">
+			<p>No momento apenas alunos da ETEC Bartolomeu, mas no futuro todos poderão utilizar o site.</p>
+		</div>
+
+		<button class="accordion">Como eu posso fazer minha inscrição para a exposição?</button>
+		<div class="resposta">
+			<p>Para se inscrever, o usuário fará o seu registro na aba "INSCREVER-SE". Após o registro, enviaremos um email para receber mais informações a respeito do artista.</p>
+		</div>
+
+		<button class="accordion">Como vou enviar minhas artes?</button>
+		<div class="resposta">
+			<p>As artes poderão ser enviadas por email.</p>
+		</div>
+
+		<button class="accordion">Qual tipo de arte posso enviar?</button>
+		<div class="resposta">
+			<p>Poderam ser enviadas pinturas, fotografias ou esculturas.</p>
+		</div>
+
+		<button class="accordion">Qual o limites da minha exposição?</button>
+		<div class="resposta">
+			<p>Num primeiro momento, apenas 4 imagens. Futuramente planejamos colocar um limite maior.</p>
+		</div>
+
+		<button class="accordion">Porque enviar meu RM?</button>
+		<div class="resposta">
+			<p>Para confirmar que o usuário é um aluno da ETEC Bartolomeu.</p>
+		</div>
+
+		<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+    			this.classList.toggle("active");
+    		var panel = this.nextElementSibling;
+    		if (panel.style.maxHeight) {
+      			panel.style.maxHeight = null;
+    		} else {
+      		panel.style.maxHeight = panel.scrollHeight + "px";
+    		} 
+  			});
+			}
+		</script>
+	</section>
+		<br><br><br><br><br><br>
+	<footer>
+		<div class="footer-bottom">
+			<div class="redes">
+				<p>Acesse nossas redes:</p>
+			</div>
+			<ul class="socials">
+			<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="https://www.instagram.com/gallery_communityexpo/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fa fa-youtube"></i></a></li>
+			</ul>
+			<div class="copyright">
+				<p>copyright &copy;2021. Feito por: <span>Asafe, Geovane, Marco</span></p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

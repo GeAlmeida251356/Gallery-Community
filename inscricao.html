@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery Community</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="inscricao.css">
+	<link rel="shortcut icon" type="imagex/png" href="Imagens/index/logo.ico">
+</head>
+<body>
+	<div class="voltar">
+		<a href="index.html"><img src="Imagens/index/seta_voltar.png"></a>
+	</div>
+	<div class="inscricao">
+		<form action="PHP_insc.php" method="post" enctype="multipart/form-data">
+			<h1>Cadastro</h1>
+			<input type="text" placeholder="Nome completo" required name="nome"><br><br>
+			<input type="text" placeholder="RM" required name="rm" minlength="5" maxlength="5"><br><br>
+			<input type="email" placeholder="Email de contato" required name="email"><br><br>
+			<button>Cadastrar</button>
+		</form>
+	</div>
+</body>
+</html>
